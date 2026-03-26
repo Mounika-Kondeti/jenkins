@@ -1,3 +1,4 @@
+def call() {
 podTemplate(label: podtemplatename,
     nodeSelector: "name=contido-jenkins-agent-node",
     containers: [
@@ -8,3 +9,4 @@ podTemplate(label: podtemplatename,
     ],
     volumes: [emptyDirVolume(mountPath: '/home/jenkins/agent', memory: false)]
 )
+}
