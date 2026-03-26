@@ -1,4 +1,4 @@
-def call() {
+def call(String podtemplatename) {
 podTemplate(label: podtemplatename,
     nodeSelector: "name=contido-jenkins-agent-node",
     containers: [
